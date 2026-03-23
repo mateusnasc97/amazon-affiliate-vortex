@@ -24,6 +24,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   const gtmId = process.env.NEXT_PUBLIC_GTM_ID;
+  console.log("GTM ID carregado:", gtmId)
 
   return (
     <html
@@ -34,7 +35,7 @@ export default function RootLayout({
         {gtmId && (
           <Script
             id="gtm-script"
-            strategy="beforeInteractive"
+            strategy="afterInteractive"
             dangerouslySetInnerHTML={{
               __html: `
                 (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
