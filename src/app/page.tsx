@@ -1,65 +1,127 @@
+
 import Image from "next/image";
+import Link from "next/link";
+import airFryerImg from "../../public/air_fryer_image.jpg";
+import ReviewCard from "../components/ReviewCard";
+import FaqItem from "../components/FaqItem";
+
+export const metadata = {
+  title: "Best Mini Air Fryer 2026 | Instant Pot Vortex Review",
+  description: "Cook smarter with the Instant Pot Vortex 4Qt Air Fryer. Read reviews, FAQs, and find the best daily kitchen deals.",
+};
 
 export default function Home() {
+  const amazonLink = "https://amzn.to/4sZ31kX"; 
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+    <main className="min-h-screen bg-gray-50 font-sans text-gray-900">
+      <header className="bg-white border-b py-4 text-center">
+        <h1 className="text-sm font-bold uppercase tracking-widest text-orange-600">
+          Daily Kitchen Deals 2026
+        </h1>
+      </header>
+
+      <section className="max-w-xl mx-auto px-6 py-8 md:py-16">
+        <div className="flex justify-center mb-4">
+          <span className="bg-yellow-100 text-yellow-800 text-xs font-semibold px-2.5 py-0.5 rounded border border-yellow-200">
+            ★ #1 Best Seller in Air Fryers
+          </span>
+        </div>
+
+        <h2 className="text-3xl md:text-4xl font-extrabold text-center leading-tight mb-6">
+          Cook Smarter, Not Harder with the <span className="text-orange-600">Instant Pot Vortex</span>
+        </h2>
+
+        <div className="relative w-full mb-8 rounded-2xl overflow-hidden shadow-lg border bg-white flex justify-center">
+            <Image 
+                src={airFryerImg} 
+                alt="Instant Pot 4Qt Vortex Air Fryer on a white background" 
+                className="w-full h-auto object-contain" 
+                priority
+            />
+        </div>
+
+        <div className="space-y-4 mb-10">
+          <div className="flex items-start space-x-3">
+            <div className="bg-green-100 p-1 rounded-full text-green-600 font-bold">✓</div>
+            <p className="text-gray-700"><strong>6-in-1 Versatility:</strong> Air fry, roast, broil, bake, reheat, and dehydrate.</p>
+          </div>
+          <div className="flex items-start space-x-3">
+            <div className="bg-green-100 p-1 rounded-full text-green-600 font-bold">✓</div>
+            <p className="text-gray-700"><strong>Space Saving:</strong> Perfect size for any countertop and small apartments.</p>
+          </div>
+          <div className="flex items-start space-x-3">
+            <div className="bg-green-100 p-1 rounded-full text-green-600 font-bold">✓</div>
+            <p className="text-gray-700"><strong>Healthy Meals:</strong> Get that crispy fried taste with 95% less oil.</p>
+          </div>
+        </div>
+
+        {/* O BOTÃO DE OURO (CTA) */}
+        <div className="sticky bottom-6 md:static z-10">
+          <a 
+            href={amazonLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center py-5 rounded-2xl text-xl font-bold shadow-2xl transition-all transform hover:scale-105 active:scale-95"
+          >
+            Check Price on Amazon
+            <span className="block text-xs font-normal opacity-80 mt-1">
+              Free Shipping for Prime Members
+            </span>
+          </a>
+        </div>
+        <div className="mt-4">
+          <p className="text-center text-xs text-gray-400 mb-2">
+            Prices and availability are subject to change.
+          </p>
+          <p className="text-center text-xs text-gray-500 font-medium">
+            As an Amazon Associate I earn from qualifying purchases.
           </p>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+
+        <div className="mb-16">
+            <h3 className="text-2xl font-bold mb-6 text-gray-800">What Customers are Saying</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                {/* Review 1 */}
+                <ReviewCard quote="The perfect size for my dorm room! Cooks chicken wings in minutes." author="Sarah M." />
+                {/* Review 2 */}
+                <ReviewCard quote="I was skeptical about the 'dehydrate' feature, but it works flawlessly!" author="Mike R." />
+                 {/* Review 3 */}
+                <ReviewCard quote="Reheating leftover pizza in this makes it taste fresh again. Worth every penny." author="Chris B." />
+                {/* Resumo */}
+                <div className="bg-yellow-50 p-6 rounded-xl border border-yellow-100 flex items-center justify-center">
+                    <div className='text-center'>
+                        <p className="text-4xl font-extrabold text-yellow-700">4.5/5</p>
+                        <p className="text-xs text-yellow-800 font-medium">Over 71,500+ global ratings on Amazon.</p>
+                    </div>
+                </div>
+            </div>
+             <p className="text-center text-xs text-gray-400 mt-4">
+               *Reviews are generalized and may differ from individual experiences. Never copy Amazon reviews verbatim (copyright policy).
+            </p>
         </div>
-      </main>
-    </div>
+
+        {/* --- NOVA SEÇÃO: F.A.Q. --- */}
+        <div className="mb-10">
+            <h3 className="text-2xl font-bold mb-6 text-gray-800">Frequently Asked Questions</h3>
+            <div className="space-y-4">
+                <FaqItem question="Is it too small for a family?" answer="Yes. The 4Qt is perfect for 1-2 people or side dishes. For larger families, consider the 6Qt or 8Qt models." />
+                <FaqItem question="How loud is it during operation?" answer="It makes a light hum, similar to a traditional oven fan. It’s significantly quieter than a typical microwave." />
+                <FaqItem question="Are the basket and tray dishwasher safe?" answer="Yes! Both are non-stick, very easy to clean by hand or in the dishwasher." />
+            </div>
+        </div>
+      </section>
+
+      {/* Social Proof Simples */}
+      <footer className="bg-white border-t py-8 px-6 text-center text-gray-500 text-sm">
+        <p>Joined over 71,500+ happy customers on Amazon.</p>
+        <div className="mt-2 text-yellow-400 text-lg">★★★★★</div>
+        <div className="mt-6">
+            <Link href="/privacy" className="text-gray-400 hover:text-gray-600 underline text-xs">
+              Privacy Policy
+            </Link>
+        </div>
+      </footer>
+    </main>
   );
 }
