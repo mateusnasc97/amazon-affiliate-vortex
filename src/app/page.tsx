@@ -1,4 +1,3 @@
-
 import Image from "next/image";
 import Link from "next/link";
 import airFryerImg from "../../public/air_fryer_image.jpg";
@@ -56,12 +55,20 @@ export default function Home() {
           </div>
         </div>
 
-        {/* O BOTÃO DE OURO (CTA) */}
+        {/* O BOTÃO DE OURO (CTA) COM BADGE DE DATA */}
         <div className="sticky bottom-6 md:static z-10">
+          <div className="flex items-center justify-center gap-2 mb-3 text-sm font-semibold text-green-600 bg-white/90 backdrop-blur-sm py-1.5 rounded-full shadow-sm border border-green-100">
+            <span className="relative flex h-2 w-2">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
+            </span>
+            Price Update: Checked today, {new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric' })}
+          </div>
           <a 
             href={amazonLink}
             target="_blank"
             rel="noopener noreferrer"
+            id="click_amazon_airfryer_main"
             className="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center py-5 rounded-2xl text-xl font-bold shadow-2xl transition-all transform hover:scale-105 active:scale-95"
           >
             Check Price on Amazon
@@ -70,7 +77,8 @@ export default function Home() {
             </span>
           </a>
         </div>
-        <div className="mt-4">
+
+        <div className="mt-4 mb-16">
           <p className="text-center text-xs text-gray-400 mb-2">
             Prices and availability are subject to change.
           </p>
@@ -82,13 +90,9 @@ export default function Home() {
         <div className="mb-16">
             <h3 className="text-2xl font-bold mb-6 text-gray-800">What Customers are Saying</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                {/* Review 1 */}
                 <ReviewCard quote="The perfect size for my dorm room! Cooks chicken wings in minutes." author="Sarah M." />
-                {/* Review 2 */}
                 <ReviewCard quote="I was skeptical about the 'dehydrate' feature, but it works flawlessly!" author="Mike R." />
-                 {/* Review 3 */}
                 <ReviewCard quote="Reheating leftover pizza in this makes it taste fresh again. Worth every penny." author="Chris B." />
-                {/* Resumo */}
                 <div className="bg-yellow-50 p-6 rounded-xl border border-yellow-100 flex items-center justify-center">
                     <div className='text-center'>
                         <p className="text-4xl font-extrabold text-yellow-700">4.5/5</p>
@@ -96,12 +100,9 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-             <p className="text-center text-xs text-gray-400 mt-4">
-               *Reviews are generalized and may differ from individual experiences. Never copy Amazon reviews verbatim (copyright policy).
-            </p>
         </div>
 
-        {/* --- NOVA SEÇÃO: F.A.Q. --- */}
+        {/* --- F.A.Q. --- */}
         <div className="mb-10">
             <h3 className="text-2xl font-bold mb-6 text-gray-800">Frequently Asked Questions</h3>
             <div className="space-y-4">
@@ -110,9 +111,23 @@ export default function Home() {
                 <FaqItem question="Are the basket and tray dishwasher safe?" answer="Yes! Both are non-stick, very easy to clean by hand or in the dishwasher." />
             </div>
         </div>
+
+        {/* --- FECHAMENTO DE FLUXO (FOOTER CTA) --- */}
+        <div className="mt-12 py-10 border-t border-gray-100 flex flex-col items-center bg-gray-50/50 w-full rounded-2xl">
+          <h3 className="text-xl font-bold text-gray-900 mb-4 text-center px-4">Ready to upgrade your kitchen?</h3>
+          <a 
+            href={amazonLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            id="click_amazon_airfryer_footer"
+            className="bg-[#FF7A00] hover:bg-[#E66E00] text-white font-extrabold py-4 px-10 rounded-xl shadow-xl transition-all hover:scale-105 text-center flex flex-col"
+          >
+            Check Current Price on Amazon
+            <span className="text-xs font-normal opacity-80 mt-1">Free Shipping for Prime Members</span>
+          </a>
+        </div>
       </section>
 
-      {/* Social Proof Simples */}
       <footer className="bg-white border-t py-8 px-6 text-center text-gray-500 text-sm">
         <p>Joined over 71,500+ happy customers on Amazon.</p>
         <div className="mt-2 text-yellow-400 text-lg">★★★★★</div>
