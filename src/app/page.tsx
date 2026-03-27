@@ -36,8 +36,10 @@ export default function Home() {
 
         <div className="relative w-full mb-8 rounded-2xl overflow-hidden shadow-lg border bg-white flex justify-center">
             <Image 
-                src={airFryerImg} 
-                alt={image.alt} 
+                src={PRODUCT_CONFIG.image.src} 
+                alt={PRODUCT_CONFIG.image.alt} 
+                width={600}  // Adicione uma largura base
+                height={600} // Adicione uma altura base
                 className="w-full h-auto object-contain" 
                 priority
             />

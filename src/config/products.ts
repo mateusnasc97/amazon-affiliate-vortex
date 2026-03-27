@@ -11,6 +11,7 @@ export const PRODUCT_CONFIG = {
     highlight: "Little Green HydroSteam"
   },
   image: {
+    src: "/bissel.jpg",
     alt: "Bissell Little Green HydroSteam portable deep cleaner"
   },
   benefits: [
