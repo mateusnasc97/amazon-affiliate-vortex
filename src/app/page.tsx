@@ -17,7 +17,7 @@ export default function Home() {
     <main className="min-h-screen bg-gray-50 font-sans text-gray-900">
       <header className="bg-white border-b py-4 text-center">
         <h1 className="text-sm font-bold uppercase tracking-widest text-orange-600">
-          Daily Kitchen Deals 2026
+          Daily Deals 2026
         </h1>
       </header>
 
