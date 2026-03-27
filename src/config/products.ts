@@ -1,40 +1,40 @@
 export const PRODUCT_CONFIG = {
   metadata: {
-    title: "Best Mini Air Fryer 2026 | Instant Pot Vortex Review",
-    description: "Cook smarter with the Instant Pot Vortex 4Qt Air Fryer. Read reviews, FAQs, and find the best daily kitchen deals."
+    title: "Bissell Little Green HydroSteam Review | Best Portable Steam Cleaner 2026",
+    description: "Tackle the toughest stains with the power of HydroSteam. See why the Bissell Little Green HydroSteam is the #1 tool for Spring Cleaning."
   },
-  amazonLink: "https://amzn.to/4sZ31kX",
-  slug: "airfryer_vortex",
-  badge: "★ #1 Best Seller in Air Fryers",
+  amazonLink: "https://amzn.to/4lXFrCY",
+  slug: "bissell_hydrosteam",
+  badge: "★ #1 Best Seller in Steam Cleaners",
   title: {
-    prefix: "Cook Smarter, Not Harder with the",
-    highlight: "Instant Pot Vortex"
+    prefix: "Stains Don't Stand a Chance with",
+    highlight: "Little Green HydroSteam"
   },
   image: {
-    alt: "Instant Pot 4Qt Vortex Air Fryer on a white background"
+    alt: "Bissell Little Green HydroSteam portable deep cleaner"
   },
   benefits: [
-    { label: "6-in-1 Versatility", desc: "Air fry, roast, broil, bake, reheat, and dehydrate." },
-    { label: "Space Saving", desc: "Perfect size for any countertop and small apartments." },
-    { label: "Healthy Meals", desc: "Get that crispy fried taste with 95% less oil." }
+    { label: "HydroSteam™ Technology", desc: "Proven to clean up to 2x better on sticky, dried-on messes." },
+    { label: "3 Cleaning Modes", desc: "SteamWash for tough messes, Steam only for refresh, and Wash mode." },
+    { label: "Quick Drying", desc: "Steam cleaning technology allows carpets and upholstery to dry in about 25 minutes." }
   ],
   reviews: {
     items: [
-      { quote: "The perfect size for my dorm room! Cooks chicken wings in minutes.", author: "Sarah M." },
-      { quote: "I was skeptical about the 'dehydrate' feature, but it works flawlessly!", author: "Mike R." },
-      { quote: "Reheating leftover pizza in this makes it taste fresh again. Worth every penny.", author: "Chris B." }
+      { quote: "The steam feature is a total game changer for pet accidents. It literally melts the mess away.", author: "Ashley B." },
+      { quote: "Used it on my car seats and they look brand new. The HydroSteam power is worth every penny.", author: "Robert H." },
+      { quote: "I had a year-old coffee stain on my rug. One pass with the steam mode and it was gone.", author: "Emily S." }
     ],
     summary: {
-      score: "4.5/5",
-      count: "71,500+"
+      score: "4.7/5",
+      count: "12,000+ Verified Ratings" 
     }
   },
   faqs: [
-    { q: "Is it too small for a family?", a: "Yes. The 4Qt is perfect for 1-2 people or side dishes." },
-    { q: "How loud is it during operation?", a: "It makes a light hum, significantly quieter than a microwave." },
-    { q: "Are the basket and tray dishwasher safe?", a: "Yes! Both are non-stick and very easy to clean." }
+    { q: "Does it actually produce real steam?", a: "Yes! It uses HydroSteam technology to deliver deep cleaning power for tough, sticky messes." },
+    { q: "Can I use it on hardwood floors?", a: "No, this is specifically designed for soft surfaces like carpets, upholstery, and car interiors." },
+    { q: "Is the cleaning formula included?", a: "Yes, it typically comes with a trial size of Bissell PET PRO OXY Spot & Stain formula." }
   ],
   footer: {
-    ctaTitle: "Ready to upgrade your kitchen?"
+    ctaTitle: "Experience the Power of HydroSteam Today"
   }
 };
