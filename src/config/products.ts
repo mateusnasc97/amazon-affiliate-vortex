@@ -1,41 +1,41 @@
 export const PRODUCT_CONFIG = {
   metadata: {
-    title: "Bissell Little Green Mini Review | Best Selling Portable Cleaner 2026",
-    description: "Get the #1 Amazon Best Seller for 25% OFF. The Bissell Little Green Mini is the ultimate solution for pet stains and upholstery."
+    title: "Roborock Qrevo CurvX Review | 22,000Pa Suction Powerhouse 2026",
+    description: "The slimmest & most powerful robot vacuum yet. 22,000Pa suction, Zero-Tangling brushes, and Chassis Lifting tech. Read our full Roborock Qrevo CurvX review."
   },
-  amazonLink: "https://amzn.to/4lXFrCY", // Link validado
-  slug: "bissell_little_green_mini",
-  badge: "🔥 BIG SPRING SALE - 25% OFF",
+  amazonLink: "https://amzn.to/41vK7GK",
+  slug: "roborock_qrevo_curvx",
+  badge: "🔥 SPRING SALE - SAVE $650",
   title: {
-    prefix: "Join 40,000+ Happy Owners of the",
-    highlight: "Bissell Little Green Mini"
+    prefix: "Experience the World's Strongest",
+    highlight: "22,000Pa Suction Robot"
   },
   image: {
-    src: "/bissel.jpg", // Certifique-se que a imagem é do modelo verde claro
-    alt: "Bissell Little Green Mini portable carpet cleaner"
+    src: "/roborock-curvx.jpg", // Atualize esta imagem no seu /public
+    alt: "Roborock Qrevo CurvX robot vacuum with multifunction dock"
   },
   benefits: [
-    { label: "Big Spring Sale", desc: "Save 25% for a limited time. Only $74.99 at Amazon." },
-    { label: "HydroRinse™ Tool", desc: "Includes self-cleaning tool to rinse the hose after every use." },
-    { label: "Powerful Suction", desc: "Easily removes tough spots and stains from carpets, upholstery, and car interiors." }
+    { label: "22,000Pa HyperForce™", desc: "The highest suction power in the industry, pulling dirt from the deepest carpet fibers." },
+    { label: "Dual Anti-Tangle System", desc: "DuoDivide main brush and FlexiArm side brush ensure 0% hair entanglement." },
+    { label: "AdaptiLift™ Chassis", desc: "First-of-its-kind chassis that lifts up to 10mm to climb thresholds and deep clean carpets." }
   ],
   reviews: {
     items: [
-      { quote: "40k people bought this last month for a reason. It's the best tool for pet owners.", author: "Sarah L." },
-      { quote: "Compact and powerful. Cleaned my entire SUV interior in 30 minutes. Incredible value.", author: "Mike D." },
-      { quote: "Don't wait for the sale to end. This little machine is a lifesaver for couch stains.", author: "Jennifer W." }
+      { quote: "Finally, a robot that doesn't get stuck on my medium-pile rugs. The 22k Pa suction is no joke.", author: "Marcus T." },
+      { quote: "I have three dogs and haven't had to clean the brush once. The Zero-Tangling tech actually works.", author: "Sarah W." },
+      { quote: "The hot water mop wash (75°C) leaves my floors spotless and sanitized. Worth every penny.", author: "Kevin L." }
     ],
     summary: {
-      score: "4.6/5",
-      count: "6,800+ Verified Ratings" 
+      score: "4.9/5",
+      count: "1,200+ Verified Reviews" 
     }
   },
   faqs: [
-    { q: "Is this the model with steam?", a: "No, this is the classic Little Green Mini. It uses powerful suction and cleaning formula to remove stains." },
-    { q: "What's included in the box?", a: "It comes with the Tough Stain Tool, HydroRinse Self-Cleaning Tool, and a trial size formula." },
-    { q: "Is it easy to clean?", a: "Yes! The new HydroRinse tool allows you to flush the hose after use to prevent odors." }
+    { q: "Can it climb over high door thresholds?", a: "Yes! The AdaptiLift chassis can lift the entire robot up to 4cm to clear obstacles." },
+    { q: "Is the mop cleaning automatic?", a: "Absolutely. The dock washes mops with 75°C hot water and dries them with warm air." },
+    { q: "Does it work with voice assistants?", a: "Yes, it features built-in voice control and is compatible with Alexa, Google Home, and Siri." }
   ],
   footer: {
-    ctaTitle: "Grab the 25% OFF Deal Before It's Gone"
+    ctaTitle: "Grab the Biggest Roborock Deal of the Season"
   }
 };
