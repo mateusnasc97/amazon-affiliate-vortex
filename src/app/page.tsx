@@ -16,9 +16,9 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-gray-50 font-sans text-gray-900">
       <header className="bg-white border-b py-4 text-center">
-        <h1 className="text-sm font-bold uppercase tracking-widest text-orange-600">
-          Daily Deals 2026
-        </h1>
+        <div className="text-red-600 text-xs font-bold text-center py-2 uppercase tracking-wide">
+          Exclusive Amazon Partner Deals • Limited Stock Available
+        </div>
       </header>
 
       <section className="max-w-xl mx-auto px-6 py-8 md:py-16">
