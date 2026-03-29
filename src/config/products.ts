@@ -11,7 +11,7 @@ export const PRODUCT_CONFIG = {
     highlight: "22,000Pa Suction Robot"
   },
   image: {
-    src: "/roborock-curvx.jpg", // Atualize esta imagem no seu /public
+    src: "/roborock-curvx.jpg",
     alt: "Roborock Qrevo CurvX robot vacuum with multifunction dock"
   },
   benefits: [
