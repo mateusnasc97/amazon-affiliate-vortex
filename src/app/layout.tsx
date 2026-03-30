@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Best Mini Air Fryer 2026 - Instant Pot Vortex Review",
-  description: "Discover why the Instant Pot Vortex is the #1 choice for small kitchens and healthy cooking.",
+  title: "Top Rated Home Appliances 2026 - Expert Reviews",
+  description: "Find the best deals and honest reviews on the latest home technology.",
 };
 
 export default function RootLayout({

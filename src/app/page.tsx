@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import airFryerImg from "../../public/air_fryer_image.jpg"; // Ainda fixo, mas poderia ser URL externa
 import ReviewCard from "../components/ReviewCard";
 import FaqItem from "../components/FaqItem";
 import { PRODUCT_CONFIG } from "../config/products";
